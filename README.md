@@ -3,3 +3,5 @@ Allows your to enter what region you want the proxies to be in and how many you 
 
 
 pip install termcolor
+
+modify the file. enter your  fogldn username and password.
