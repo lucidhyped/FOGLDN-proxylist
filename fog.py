@@ -56,14 +56,12 @@ fogRegions = [
 'Proxy-nike',
 ]
 
-
 cprint('\n'.join(fogRegions), 'magenta')
 #Raw Input type of proxies and what to name the .txt file
 proxyType = raw_input("\n\nWhat Region of proxies?\n")
 numProxies = raw_input("\n\nHow many proxies do you need?\n")
-textFile = raw_input("\n\nName of .txt file to save proxies\n")
 #Writting the txt file
-myFile = open(textFile+".txt","w")
+myFile = open("proxies.txt","w")
 loopTimes = int(numProxies)
 timesToLoop = int(loopTimes)
 
