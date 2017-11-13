@@ -1,7 +1,6 @@
 # FOGLDN-proxylist
-Allows your to enter what region you want the proxies to be in and how many you want then it saves it in a .txt file you can name whatever you want.
-
+Allows you to enter the FOGLDN Regions, The number of proxies you need, and saves it all in a txt file(proxies.txt)
 
 pip install termcolor
 
-modify the file. enter your  fogldn username and password.
+Modify the file and change with your FOGLDN Username & Password.
