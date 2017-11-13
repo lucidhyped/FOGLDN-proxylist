@@ -60,14 +60,24 @@ cprint('\n'.join(fogRegions), 'magenta')
 #Raw Input type of proxies and what to name the .txt file
 proxyType = raw_input("\n\nWhat Region of proxies?\n")
 numProxies = raw_input("\n\nHow many proxies do you need?\n")
+staticIp = raw_input("\n\nDo yu need the proxies to be Static/Sticky IP? (Yes or No)\n")
 #Writting the txt file
 myFile = open("proxies.txt","w")
 loopTimes = int(numProxies)
 timesToLoop = int(loopTimes)
 
-for x in range(1, timesToLoop+1):
-	myFile.write(proxyType+".fogldn.com:33128:"+username+"!a"+str(x)+":"+password+"\n")
-myFile.close()
+if staticIp.upper() == 'NO' :
+	for x in range(1, timesToLoop+1):
+		myFile.write(proxyType+".fogldn.com:33128:"+username+":"+password+"\n")
+
+elif staticIp.upper() == 'YES':
+	for x in range(1, timesToLoop+1):
+		myFile.write(proxyType+".fogldn.com:33128:"+username+"!a"+str(x)+":"+password+"\n")
+
+else:
+	cprint('Try Again','magenta')
+
+	
 #@lucidhyped Twitter
 cprint('\n\nSaved Proxies: ' +numProxies, 'magenta')
 cprint('File Name: ' +str(myFile.name), 'magenta')
