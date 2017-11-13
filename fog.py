@@ -56,6 +56,7 @@ fogRegions = [
 'Proxy-nike',
 ]
 
+
 cprint('\n'.join(fogRegions), 'magenta')
 #Raw Input type of proxies and what to name the .txt file
 proxyType = raw_input("\n\nWhat Region of proxies?\n")
